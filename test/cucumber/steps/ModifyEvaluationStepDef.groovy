@@ -1,11 +1,8 @@
-/**
- * Created by Deyvson on 18/04/2015.
- */
 
 this.metaClass.mixin(cucumber.api.groovy.Hooks)
 this.metaClass.mixin(cucumber.api.groovy.EN)
 
-import ta.*
+import tas.*
 import static cucumber.api.groovy.EN.*
 
 Given(~'^I do not have a evaluation with the name "([^"]*)"$') { String title ->
