@@ -17,7 +17,19 @@ class UEvaluation {
 	}
 
 	def getByTitle(String title) {
-		// look for evaluation by it type
+		// look for evaluation by it title
+	}
+
+	def rippenEvaluation(String title, String questionDescription = null, String questionAnswer = null, String questionAlternative = null) {
+		builder.createEvaluation()
+		builder.setEvaluationTitle(title)
+		int quesitonIndex = builder.addEvaluationQuestion(questionDescription)
+		builder.setQuestionAnswer(questionIndex, questionAnswer)
+		builder.addQuestionAlternative(questionIndex, questionAlternative)
+
+		Evaluation evaluation = builder.getEvaluation()
+		saveEvaluation(evaluation)
+
 	}
 
 	def saveEvaluation(Evaluation evaluation) {
