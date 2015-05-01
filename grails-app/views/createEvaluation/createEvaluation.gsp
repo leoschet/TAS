@@ -6,12 +6,18 @@
 	<title>Criar Avaliação</title>
 </head>
 <body>
+
+	<div id="messageBox">
+		<p id="messageBoxText">${pageMessage}</p>
+	</div>
+
 	<g:form name="createEvaluation" action="rippenEvaluation">
 		<input name="title" />
 		<input name="question description" />
 		<input name="question answer" />
 		<input name="question alternative" />
-		<input id="register" type="submit" value="Create" />
+		<g:submitButton name="register" value="Register" id="Register"/>
 	</g:form>
 </body>
 </html>
+<%@  %>
